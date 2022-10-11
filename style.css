@@ -1,3 +1,12 @@
+html {
+  scroll-padding-top: 3.75rem;
+}
+nav {
+  height: 4rem;
+  position: sticky;
+  top: 0;
+}
+
 body::before {
   display: block;
   content: "";

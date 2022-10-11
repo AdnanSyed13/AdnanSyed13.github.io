@@ -1,4 +1,5 @@
-git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
+<!-- git init cd C:\Users\prora_000\Desktop\Programming\VC_Website -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,14 +25,14 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Bootcamp</title>
+    <title>Shah Homeopathy Clinic</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand"
-          >Shah Homeopathy Clinic - Canada Only</a
+          >Shah Homeopathy Clinic</a
         >
 
         <button
@@ -43,7 +44,7 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse bg-dark" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="#patients" class="nav-link">Patients & Symptoms</a>
@@ -61,24 +62,24 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
       </div>
     </nav>
 
-    <!-- Showcase -->
+    <!-- Showcase section -->
     <section
-      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
-    >
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
             <h1><span class="text-warning">Shah Homeopathy Clinic</span></h1>
+
             <p class="lead my-4">
-              We are here to serve you! Are you looking for an alternatives
-              treatment for your health issues? Note: Currently only serving
-              Canadian patients at this time.
-              <br />[1]
+              We are here to serve you! Are you looking for an alternative
+              treatment for your health issues? We treat patients with their
+              individualized symptoms by homeopathic natural remedies.
+              <br />
             </p>
+
             <button
               class="btn btn-primary btn-lg"
-              onclick="location.href='#appointment'"
-            >
+              onclick="location.href='#appointment'">
               Request an Appointment
             </button>
           </div>
@@ -91,12 +92,14 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
       </div>
     </section>
 
-    <!-- Boxes -->
+    <!-- Cards -->
+    <!-- Overall Cards Formatting -->
     <section class="p-5">
       <div class="container">
         <div class="row text-center g-4">
+
+        <!-- Start of Card 1: Vakil Bio -->
           <div class="col-md">
-            <!-- Box 1 -->
             <div class="card bg-dark text-light">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
@@ -104,14 +107,57 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
                 </div>
                 <h3 class="card-title mb-3">Syed Vakil Shah Bio</h3>
                 <p class="card-text">
-                  [2]
-                  <!-- Meet Vakil Syed -->
+                  [2] Learn more about Vakil Shah
+
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <!-- Modal Button -->
+                <button type="button" 
+                class="btn btn-primary"
+                data-bs-toggle="modal" 
+                data-bs-target="#VakilBioModal">
+                Read More
+                </button>
+              
+                <!-- Modal and contents -->
+                <div class="modal fade" id="VakilBioModal" tabindex="-1" aria-labelledby="VakilBioModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="VakilBioModalLabel">Meet Syed Vakil Shah</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-dark "> 
+                        <img src="img/Vakil_Headshot.jpg" class="img-fluid img.thumbnail">
+                        <div class="text-left">
+                          <p>
+                          <h3>Who is Mr. Shah?</h3>
+                          Since 2000, WE ARE WITH YOU!<br>
+                          With a vast practice of over 25 years, we have treated the Acute and Chronic cases through Homeopathy in worldwide<br><br>
+                          <h4>Canadian Homeopath</h4>
+                          Syed Vakil Ahmed Shah is one of the leading homeopaths in Milton, Ontario®<br><br>
+                          <h4>Industrial Pharmacist</h4>
+                          Mr. Shah is also a Leading Industrial Pharmacist with over 25 years of experience in pharmaceutical manufacturing serving as a
+                          regional director and research scientist in Canada, the Middle East, and Pakistan.<br><br>
+
+                          <h4>Hundreds of satisfied clients</h4>
+                          Treated hundreds of patients throughout the world<br>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Modal and contents -->
+              
               </div>
             </div>
           </div>
-          <!-- Box 2 -->
+          <!-- End of Card 1: Vakil Bio Box -->
+
+          <!-- Start of Card 2: What is Homeopathy? -->
           <div class="col-md">
             <div class="card bg-secondary text-light">
               <div class="card-body text-center">
@@ -120,14 +166,48 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
                 </div>
                 <h3 class="card-title mb-3">What is Homeopathy?</h3>
                 <p class="card-text">
-                  [3]
-                  <!--To add a summary-->
+                  [3] Learn more about Homeopathy
+                
                 </p>
-                <a href="#" class="btn btn-dark">Read More</a>
+                <!-- Modal Button -->
+                <button type="button" 
+                class="btn btn-primary"
+                data-bs-toggle="modal" 
+                data-bs-target="#WhatIsHomeopathyModal">
+                Read More
+                </button>
+
+                <!-- Modal and contents -->
+                <div class="modal fade" id="WhatIsHomeopathyModal" tabindex="-1" aria-labelledby="WhatIsHomeopathyModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="WhatIsHomeopathyModalLabel">What is Homeopathy?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-dark text-left">
+                        <p>
+                          Homeopathy is <span class="fw-bold">a medical system based on the belief that the body can cure itself.</span> 
+                          Those who practice it use tiny amounts of natural substances, like plants and minerals. 
+                          Homeopathy believe these stimulate the healing process.
+
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Modal and contents -->
+
               </div>
             </div>
           </div>
-          <!-- Box 3 -->
+          <!-- End of Card 2: What is Homeopathy? -->
+
+
+          <!-- Start of Card 3: Why Shah Homeopathy? -->
           <div class="col-md">
             <div class="card bg-light text-dark">
               <div class="card-body text-center">
@@ -136,10 +216,44 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
                 </div>
                 <h3 class="card-title mb-3">Why Shah Homeopathy?</h3>
                 <p class="card-text">
-                  [4] We treat the patients with their individualized symptoms
-                  by homeopathic natural remedies.
+                  [4] We treat patients with their individualized symptoms
+                  through homeopathic natural remedies.
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+
+                <!-- Modal Button -->
+                <button type="button" 
+                class="btn btn-primary"
+                data-bs-toggle="modal" 
+                data-bs-target="#WhyShahHomeopathyModal">
+                Read More
+                </button>
+
+                <!-- Modal and contents -->
+                <div class="modal fade" id="WhyShahHomeopathyModal" tabindex="-1" aria-labelledby="WhyShahHomeopathyModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="WhyShahHomeopathyModalLabel">Why Shah Homeopathy?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-dark text-left">
+                        <p>
+                          Dr. Shah’s experience as a registered Homeopath and Industrial Pharmacist along with being a 
+                          research scientist and Regional Director in homeopathic treatment and pharmaceutical manufacturing 
+                          allows us to provide unique expertise that helps treat acute and chronic diseases along with symptomatic 
+                          functional disorders. We provide you the treatment based on individualized symptoms and constant support 
+                          till you are satisfied. 
+
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Modal and contents -->
+
               </div>
             </div>
           </div>
@@ -170,93 +284,194 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
     <!-- Patients section -->
     <section id="patients" class="p-5 bg-light">
       <div class="container">
-        <h2 class="text-center text-dark">Types of Patients and Symptoms</h2>
-        <p class="lead text-center text-dark mb-5">
-          Vakil Syed provides treatments for the follow patient types and
-          symptoms:
-        </p>
-        <div class="row g-4">
-          <!-- General Patient -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="img/general.jpg"
-                  class="img-fluid img.thumbnail"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">General</h3>
-                <p class="card-text">
-                  General patients with symptoms such as: <br />[5]
-                </p>
-                <a href="#" class="btn btn-dark mt-3">
-                  <i class="bi bi-chevron-right"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
+        <div class="row g-3">  
+          <h2 class="text-center text-dark">Types of Patients and Symptoms</h2>
+          <p class="lead text-center text-dark mb-5">
+            Vakil Syed provides treatments for the follow patient types and
+            symptoms:
+          </p>
+          <div class="row g-4">
+            <!-- General Patient -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="img/general.jpg"
+                    class="img-fluid img.thumbnail"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3 text-center">General</h3>
+                  <p class="card-text text-center">
+                    What types of health conditions are treated by homeopathy?<br>
+                    <br>
+                    <span class="fw-bold text-left">Among the most common conditions that people seek homeopathic treatment for are:</span> <br>
+                    [5]
+                    <div class="row">
+                      <div class="col-md-12 text-left">
+                        <ul style="list-style-position: outside; vertical-align: left; text-align: left;">
+                          <li>Asthma</li>
+                          <li>Ear infection</li>
+                          <li>Hay fever</li>
+                          <li>Mental health conditions, such as, depression, stress, and anxiety</li>
+                          <li>Allergies, such as, food allergies</li>
+                          <li>Dermatitis (an allergic skin condition)</li>
+                          <li>Arthritis</li>
+                          <li>High blood pressure</li>
+                          <li>Tonsils</li>
+                          <li>Eczema</li>
 
-          <!-- Working Adult Patient -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="img/working-adults.jpg"
-                  class="img-fluid img.thumbnail"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Working Adults</h3>
-                <p class="card-text">
-                  Working adults with symptoms such as: <br />[6]
-                </p>
-                <a href="#" class="btn btn-dark mt-3">
-                  <i class="bi bi-chevron-right"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
+                        </ul>
+                      </div>
+                    </div>
 
-          <!-- Children Patient -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="img/children.jpg"
-                  class="img-fluid img.thumbnail mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Children</h3>
-                <p class="card-text">
-                  Children patients with symptoms such as <br />[7]:
-                </p>
-                <a href="#" class="btn btn-dark mt-3">
-                  <i class="bi bi-chevron-right"></i>Read More</a
-                >
+                  </p>
+                  <!-- Read More button -->
+                  <!-- <a href="#" class="btn btn-dark mt-3">
+                    <i class="bi bi-chevron-right"></i>Read More</a
+                  > -->
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Elderly Patient -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="img/elderly.jpg"
-                  class="img-fluid img.thumbnail"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Elderly</h3>
-                <p class="card-text">
-                  Elderly patients with symptoms such as: <br />[8]
-                </p>
-                <a href="#" class="btn btn-dark mt-3">
-                  <i class="bi bi-chevron-right"></i>Read More</a
-                >
+            <!-- Working Adult Patient -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="img/working-adults.jpg"
+                    class="img-fluid img.thumbnail"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3 text-center">Working Adults</h3>
+                  <p class="card-text text-center">
+                    Working adults with symptoms such as: <br>[6]
+                    <br>
+
+                    <div class="row">
+                      <div class="col-md-12 text-left">
+                        <ul style="list-style-position: outside; vertical-align: left; text-align: left;">
+                          <li>Adult asthma</li>
+                          <li>Eczema</li>
+                          <li>Psoriasis</li>
+                          <li>Atopic dermatitis</li>
+                          <li>Frequent colds</li>
+                          <li>Hair loss</li>
+                          <li>Ulcerative colitis</li>
+                          <li>Vitiligo (Leukoderma)</li>
+                          <li>Acne</li>
+                          <li>Anxiety neurosis</li>
+                          <li>BEP-Benign Enlargement of Prostate</li>
+                          <li>Backache</li>
+                          <li>Constipation</li>
+                          <li>GERD</li>
+                          <li>Piles</li>
+                          <li>Warts</li>
+                          <li>Vertigo</li>
+                          <li>Writers cramp (Dystonia)</li>
+                          <li>And many more based on individual patient symptoms!</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </p>
+                  <!-- Read More button -->
+                  <!-- <a href="#" class="btn btn-dark mt-3">
+                    <i class="bi bi-chevron-right"></i>Read More</a
+                  > -->
+                </div>
               </div>
             </div>
+
+            <!-- Children Patient -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="img/children.jpg"
+                    class="img-fluid img.thumbnail mb-3"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3 text-center">Children</h3>
+                  <p class="card-text text-center">
+                    Children patients with symptoms such as <br>[7]:
+                    <br>
+
+                    <div class="row">
+                      <div class="col-md-12 text-left">
+                        <ul style="list-style-position: outside; vertical-align: left; text-align: left;">
+                          <li>Allergies</li>
+                          <li>Colds and flu</li>
+                          <li>Conjunctivitis ("pink eye")</li>
+                          <li>Diarrhea</li>
+                          <li>Headaches</li>
+                          <li>Mononucleosis</li>
+                          <li>Stomach aches</li>
+                          <li>Appetite</li>
+                          <li>Learning issues</li>
+                          <li>Growth issues</li>
+                          <li>Tonsils</li>
+                          <li>Constipation</li>
+                          <li>Teething issues</li>
+                          <li>And many more based on individual patient symptoms!</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </p>
+                  <!-- Read More button -->
+                  <!-- <a href="#" class="btn btn-dark mt-3">
+                    <i class="bi bi-chevron-right"></i>Read More</a
+                    > -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Elderly Patient -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="img/elderly.jpg"
+                    class="img-fluid img.thumbnail"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3 text-center">Elderly</h3>
+                  <p class="card-text text-center">
+                    Elderly patients with symptoms such as: <br/>[8]
+                    
+                    <div class="row">
+                      <div class="col-md-12 text-left">
+                        <ul style="list-style-position: outside; vertical-align: left; text-align: left;">
+                          <li>Arthritis</li>
+                          <li>Heart disease</li>
+                          <li>Constipation</li>
+                          <li>Respiratory diseases</li>
+                          <li>Alzheimer’s disease</li>
+                          <li>Osteoporosis</li>
+                          <li>Diabetes</li>
+                          <li>Influenza and pneumonia</li>
+                          <li>Falls</li>
+                          <li>Substance abuse</li>
+                          <li>Obesity</li>
+                          <li>Mental disorders</li>
+                          <li>Memory issues</li>
+                          <li>Oral health</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </p>
+                  <!-- Read More button -->                
+                  <!-- <a href="#" class="btn btn-dark mt-3">
+                    <i class="bi bi-chevron-right"></i>Read More</a
+                    > -->
+                </div>
+              </div>
+            </div>
+            <!-- Elderly Patient End -->
+            
           </div>
-          <!-- Elderly Patient End -->
-        </div>
+        </div> 
       </div>
     </section>
 
@@ -285,23 +500,161 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
       </div>
     </section> -->
 
-    <!-- 2nd Section -->
+    <!-- Learn more about Homeopathy Section -->
     <section id="learn" class="p-5 bg-dark text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
             <h2>Learn more about Homeopathy</h2>
             <p class="lead">
-              Put information here <br />
+              History of Homeopathy<br>
+              <br>
+              <span class="fw-bold">Homeopathy was developed in the late 18th century by Samuel Hahnemann, a respected doctor in Germany. </span>
+              Hahnemann believed that "like cures like" and that minute concentrations of a particular toxin could 
+              cure the very same symptoms it would cause in larger doses. <span class="fw-bold">Homeopathy is based on the 
+              principle of 'like cures like' also called the 'law of similar'.</span> It was developed by Samuel 
+              Hahnemann (1755-1843), a German doctor who became dissatisfied with the medical practices of his time. These 
+              included the prescribing of toxic substances like arsenic and lead. While studying the harmful effects of such 
+              substances, he discovered that illness could be treated with very small amounts of the substance that, in larger 
+              quantities, caused it.<br>
+              <br>
+              Although the idea that like cures like can be traced back to the Greek physician, Hippocrates (460-377BC), 
+              it was Hahnemann who developed it into a system of treatment. Hahnemann spent several years experimenting 
+              on himself and a group of volunteers testing a wide range of natural substances, such as plants, minerals 
+              and metals. To avoid harmful side effects, he diluted each medicine until he reached the greatest dilution 
+              that would still produce a response. These experiments were called proving’s and are the foundations of 
+              homeopathic medicine.
+              <br/>
               [9]
             </p>
-            <a href="#" class="btn btn-light mt-3">
+
+            <!-- Modal Button -->
+            <button type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#HomeopathyLongFormModal">
+            Read More
+            </button>
+
+            <!-- Modal and contents -->
+            <div class="modal fade" id="HomeopathyLongFormModal" tabindex="-1" aria-labelledby="HomeopathyLongFormModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="HomeopathyLongFormModalLabel">Learn more about Homeopathy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-dark text-left">
+                    <p>
+                      <!-- <span class="fw-bold">What is homeopathy?</span><br> -->
+                      <h5>What is homeopathy?</h5>
+                      Homeopathy is a <span class="fw-bold">medical system based on the belief that the body can cure itself.</span> 
+                      Those who practice it use tiny amounts of natural substances, like plants and minerals. A homeopath believes 
+                      these stimulate the healing process
+                      <br>
+                      <br>
+                      
+                      <h5>What does a homeopath do?</h5>
+                      A Homeopath aim to <span class="fw-bold">treat the whole person, considering personality, lifestyle, and 
+                      hereditary factors, as well as the history of the disease.</span> Since all people are unique, 
+                      homeopathic medicines are prescribed to treat individuals. 
+                      <br>
+                      <br>
+                      
+                      <h5>What are the sources of homeopathic medicines?</h5>
+                      The homeopathic medicines are prepared from a wide range of natural sources. Over 75% of the medicine’s 
+                      origin from the vegetable kingdom, i.e., flowers, roots, leaves, and the juice.
+                      <br>
+                      <br>
+                      Certain chemicals and minerals are also used to prepared certain medicines. For instance, sulfuric acid, 
+                      nitric acid. Most of the minerals and metals are used as a source of medicine, such as gold, silver, zinc, 
+                      tin, iron and so on.
+                      <br>
+                      <br>
+                      Some microbes, bacteria, virus are also used to prepare a special group of medicines (called Nosode), for 
+                      instance, influenza virus, bacteria which produce tuberculosis, etc. Some of the body's secretions such as 
+                      the hormones (thyroid hormone, for instance) also find a place in the homeopathic pharmacopeia.
+                      <br>
+                      <br>
+                      The animal kingdom has a special place in the homeopathy pharmacy and homeopathy medicines are prepared from 
+                      the animal sources in a nonviolent technique. Some insects such as the Spanish fly (Apis Mellifica) and certain 
+                      animal products such as the venom of Cobra snake (Naja) are used in a unique manner.
+                      <br>
+                      <br>
+
+                      <h5>How are the homeopathic medicines prepared?</h5>
+                      The revolutionary method of drug preparation in homeopathy, called Potentization, utilizes a very minute quantity 
+                      of the original drug substance.
+                      <br>
+                      <br>
+                      A very small portion of any substance, say a drop of snake venom, as one part, is mixed with 99 parts of alcohol or 
+                      distilled water. Some powerful strokes are given to this mixture of about one hundred drops/ml. It makes so-called 1c 
+                      potency. Now, out of these one hundred drops, one drop is taken and mixed with ninety-nine drops of alcohol, again to 
+                      undergo the process of vigorous strokes, making the potency 2c. The process is continued higher level up to 30c, 200c, 
+                      1000c, 10000c, 50000c and 100000c.
+                      <br>
+                      <br>
+                      <!-- Note: Is this next line suppose to be in this? -->
+                      No material, only the medicinal power...
+                      <br>
+                      <br>
+                      As you can realize, there is infinitesimal original drug substance in the higher potency medicines. It crosses Avogadro's 
+                      limit. There is no detectable material in the potency higher than twenty-four. What is left behind is the power or energy 
+                      of the medicine. One may call it dynamic power, which is capable to induce definite changes in the body system to bring 
+                      about the healing process. 
+                      <br>
+                      <br>
+
+                      <h5>Absolutely safe and non-toxic:</h5>
+                      As you can see that the special method of homeopathic medicines renders them free from any toxic substance in it. The 
+                      medicines thus are safe and free from any side effects. They are safe for even babies and pregnant women.
+                      <br>
+                      <br>
+
+                      <h5>Does Homeopathic treatments really work?</h5>
+                      It has been the day to day experience of hundreds of homeopaths world-over, for the last 200 years, that homeopathy medicines, 
+                      even in the smallest form, works! Some documented cases on these pages can convince anyone who wants to see the healing power 
+                      of minimum dose!<br>
+                      <!-- Note: Need the link/article to add a link below -->
+                      Click here to view<br> 
+                      <!-- Note: to create a URL link once link provided -->
+                      <br>
+                      The said pages can convince anyone who wants to see the healing power of minimum dose!
+                      <br>
+                      <br>
+
+                      <h5>What is the advantage of homeopathy?</h5>
+                        <div class="row">
+                          <div class="col-md-12 text-left">
+                            <ul style="list-style-position: outside; vertical-align: left; text-align: left;">
+                              <li>Homeopathic medicines act deeply to eradicate the disease completely</li>
+                              <li>No recurrence after the treatment is withdrawn</li>
+                              <li>Suitable for all age groups, children, teenagers, adults, and aged population</li>
+                              <li>Homeopathy treats the patient and not just his illness; therefore, the patient feels good on all planes after the treatment</li>
+                              <li>Boosts immunity</li>
+                              <li>Many nasty diseases find permanent cure in homeopathy</li>
+                              <li>Most affordable treatment options</li>
+                              <li>Now available online; so, you need not even step out to seek expert homeopathic prescription</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <a href="#" class="btn btn-light mt-3">
               <i class="bi bi-chevron-right"></i>Read More</a
-            >
+            > -->
           </div>
-          <div class="col-md">
-            <img src="img/holistic.jpg" class="img-fluid" alt="" />
-          </div>
+            <div class="col-md">
+             <img src="img/holistic.jpg" class="img-fluid" alt="" />
+            </div>
         </div>
       </div>
     </section>
@@ -334,6 +687,7 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
               </div>
             </div>
           </div>
+
           <!-- Question 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="questions">
@@ -343,7 +697,7 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
                 data-bs-toggle="collapse"
                 data-bs-target="#question-two"
               >
-                Question #2 <br />
+                Payment methods that we take: <br />
                 [11]
               </button>
             </h2>
@@ -353,23 +707,21 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
               data-bs-parent="#questions"
             >
               <div class="accordion-body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati perferendis debitis molestias et est, ab quis
-                explicabo iste, tenetur illo eius officiis magni id corporis
-                quod repellendus. Porro, perspiciatis quam?
+                Cash or E-transfer.
               </div>
             </div>
           </div>
+
           <!-- Question 3 -->
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+            <h2 class="accordion-header" id="questions">
               <button
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#question-three"
               >
-                Question #3 <br />
+                How can I schedule an appointment?<br />
                 [12]
               </button>
             </h2>
@@ -379,13 +731,107 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
               data-bs-parent="#questions"
             >
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                quidem, sunt provident pariatur quaerat eaque velit consectetur
-                natus nulla, vel nobis laborum! Tenetur soluta consectetur non
-                aliquid nostrum dolorum fugit?
+                By Email (vakil787@hotmail.com) or Phone call ((226) 929-9310).
               </div>
             </div>
           </div>
+
+          <!-- Question 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="questions">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                What are the first steps?<br />
+                [13]
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                A signed consent form with Q&A is filled out then emailed or dropped off at the clinic. 
+              </div>
+            </div>
+          </div>
+          
+          <!-- Question 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="questions">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                How can I pick up medicine(s)?<br />
+                [14]
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                From the dropbox or it can be mailed within Canada. 
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="questions">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-six"
+              >
+                How can I set up a follow up appointment?<br />
+                [15]
+              </button>
+            </h2>
+            <div
+              id="question-six"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                48 hours notice is required for a follow up appointment. Please Email (vakil787@hotmail.com) or Phone call ((226) 929-9310).
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="questions">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-seven"
+              >
+                What should I do in an emergency?<br />
+                [16]
+              </button>
+            </h2>
+            <div
+              id="question-seven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body text-danger">
+                <span class="fw-bold">Homeopathic treatment for Emergency. Please contact your Family Physician or go to the Emergency room or call 911.</span>
+              </div>
+            </div>
+          </div>
+          
           <!-- Copy Question code above to add more to FAQ section -->
         </div>
       </div>
@@ -441,9 +887,13 @@ git init cd C:\Users\prora_000\Desktop\Programming\VC_Website
       var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
-        center: [-71.045911, 42.345789],
-        zoom: 18,
+        center: [-79.8830, 43.4995],
+        zoom: 17,
       });
+      // Create a default Marker and add it to the map.
+      const marker1 = new mapboxgl.Marker()
+      .setLngLat([-79.8833, 43.49925])
+      .addTo(map);
     </script>
   </body>
 </html>
