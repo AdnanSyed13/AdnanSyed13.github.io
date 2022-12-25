@@ -66,7 +66,9 @@ body {
 	font-size: 35px;
 }
 .single-box {
-	overflow: hidden
+	/* overflow: hidden; */
+    display: flex;
+    min-height: 700px
 }
 .single-box .img-area {
 	width: 30%;
